@@ -1,0 +1,28 @@
+[project]
+name = "abot-avilla"
+version = "3.0.0-alpha.1"
+description = "ABot 转生版"
+authors = [{ name = "djkcyl", email = "cyl@cyllive.cn" }]
+dependencies = [
+    "httpx>=0.24.1",
+    "avilla-qqapi>=1.0.0a11",
+    "graia-saya>=0.0.19",
+    "graia-scheduler>=0.3.1",
+    "avilla-core>=1.0.0a10",
+    "arclet-alconna-avilla>=0.16.2",
+    "graiax-shortcut>=0.1.0",
+    "avilla-twilight>=0.2.0",
+    "pydantic>=2.5.0",
+    "avilla-onebot-v11>=1.0.0a7",
+    "pygtrie>=2.5.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "AGPLv3" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+abot = "abot_avilla.__main__:main"
